@@ -1,0 +1,23 @@
+.title{
+    margin-left: 40%;
+    padding-top: 50px;
+    color: rgb(15, 39, 31);
+    font-size: 50px;
+}
+.projects{
+    background-color: rgb(228, 215, 199);
+}
+.infodiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+}
+.imgstyle{
+    height: 500px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+.textstyle{
+   font-size: 25px;
+   width: 300px;
+}

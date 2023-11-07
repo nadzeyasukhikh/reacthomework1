@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background-color: rgb(94, 138, 123);
+}
+.imgStyle{
+    border-radius: 80px; 
+    height: 80px;
+   
+}
+.btnsdiv{
+    display: flex;
+    gap: 20px;
+}
+.btnStyle{
+    height: 40px;
+    background-color: rgb(174, 212, 200);
+    border-radius: 8px;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btnStyle:hover{
+    background-color: rgb(26, 75, 64);
+    color: bisque;
+    transition: 0.5s;
+}

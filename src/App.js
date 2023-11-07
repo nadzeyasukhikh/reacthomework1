@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import About from './components/About';
+import Nav from './components/Nav';
+import Projects from './components/Projects';
+import Services from './components/Services';
 
 function App() {
+  const [currentTab, setCurrentTab] = useState("about")
+
+  const handleTabChange = (tabName) => {
+    setCurrentTab(tabName);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav onTabChange={handleTabChange} />
+      {currentTab === "about" && <About />}
+      {currentTab === "projects" && <Projects />}
+      {currentTab === "services" && <Services />}
     </div>
   );
 }

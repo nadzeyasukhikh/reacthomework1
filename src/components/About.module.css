@@ -1,0 +1,19 @@
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: antiquewhite;
+}
+.textstyle{
+    max-width: 300px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+img{
+    height: 500px;
+}
+.title{
+    color: rgb(15, 39, 31);
+    font-size: 50px;
+}
